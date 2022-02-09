@@ -1,0 +1,111 @@
+
+p {
+  color: #888888;
+  font-size: 14px;
+}
+
+.h2, h2 {
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: #222222;
+}
+
+.btn {
+    border: 2px solid #222;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    padding: 5px 20px;
+    transition: 0.2s all;
+}
+
+.btn:hover {
+  background-color: #222;
+  color: #fff;
+}
+
+/* Nav styles */
+.navbar {
+    background-color: #f6f6f7;
+    padding: 0 1rem;
+    margin-top: 15px;
+}
+
+.nav-link {
+    color: #919191;
+    font-size: 12px;
+}
+
+/* Main Content styles */
+.price {
+  line-height: 3em;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.store {
+  margin-top: 50px;
+}
+
+.shirt-size {
+    padding-left: 0;
+}
+
+.shirt-size li {
+    display: inline-block;
+}
+
+.description + p {
+    font-weight: 600;
+}
+
+.description {
+    margin-bottom: 30px;
+}
+
+button {
+    border: 1px solid #ccc;
+    font-size: 14px;
+    padding: 8px 15px;
+    background-color: #fff;
+}
+
+.description + p > span {
+    color: #C90000;
+    margin-left: -3px;
+    margin-right: 3px;
+}
+
+#showSize {
+    color: #222222;
+}
+
+
+.mt-sm {
+    margin-top: 40px;
+}
+
+@media (min-width: 576px) {
+  .mt-sm {
+      margin-top: 0;
+  }
+}
+
+@media (min-width: 576px) {
+  .price:after, .price:before  {
+      content: "";
+      display: block;
+      border: 0.5px solid #F6F6F7;
+  }
+
+  .price:before  {
+    margin-top: 20px;
+  }
+
+  .price:after  {
+    margin-bottom: 20px;
+  }
+}

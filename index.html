@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Clothing Store</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style/main.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg" aria-label="">
+    <div class="container">
+        <div class="navbar-collapse">
+          <ul class="navbar-nav ml-auto ">
+            <li class="nav-item">
+              <a class="nav-link" href="#"><span class="d-none d-md-inline">My Cart</span> <i class="fa fa-shopping-cart d-sm-inline d-md-none"></i> ( 4 )</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container store">
+      <div class="row">
+
+        <div class="col-sm-4 offset-md-2">
+          <img class="img-fluid" src="assets/classic-tee.jpg" alt="Classic White Tee">
+        </div>
+
+        <div class="col-sm-5 mt-sm">
+          <h2>Classic Tee</h2>
+          <span class="price">$75.00</span>
+
+          <p class="description">Dolor sit amet, consectetur adipiscing elit. Haec et tu ita posuisti, et verba vestra sunt. Quod autem ratione actum est, id officium appellamus dolor sit amet, consectetur adipiscing elit. Haec et tu ita posuisti, et verba vestra sunt, Quod autem ratione actum est, id officium appellamus</p>
+
+          <p>SIZE <span>*</span> <span id="showSize"></span></p>
+
+          <ul class="shirt-size">
+            <li>
+              <button class="add-size" type="button" onclick="document.getElementById('showSize').textContent = 'S';
+">S</button>
+            </li>
+            <li>
+              <button class="add-size" type="button" onclick="document.getElementById('showSize').textContent = 'M';">M</button>
+            </li>
+            <li>
+              <button class="add-size" type="button" onclick="document.getElementById('showSize').textContent = 'L';">L</button>
+            </li>
+          </ul>
+
+          <a href="#" class="cart btn">Add to Cart</a>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Script for tshirtSize -->
+    <script src="js/main.js" charset="utf-8"></script>
+
+  </body>
+
+</html>
